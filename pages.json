@@ -1,0 +1,308 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/index/selectCampus",
+			"style": {
+				"navigationBarTitleText": "选择地址"
+			}
+		},
+		{
+			"path": "pages/index/shopList/index",
+			"style": {
+				"navigationBarTitleText": "店铺列表"
+			}
+		},
+		{
+			"path": "pages/index/shop/index",
+			"style": {
+				"navigationBarTitleText": "店铺详情"
+			}
+		},
+		{
+			"path": "pages/index/shop/im",
+			"style": {
+				"navigationBarTitleText": "聊天"
+			}
+		},
+		// {
+		// 	"path": "pages/index/shop/liaotian",
+		// 	"style": {
+		// 		"navigationBarTitleText": "聊天室"
+		// 	}
+		// },
+		{
+			"path": "pages/index/shop/goodsDet",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/index/shop/payOrder",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		},
+		{
+			"path": "pages/index/shop/confirmOrder",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		},
+		{
+			"path": "pages/index/shop/pindanDet",
+			"style": {
+				"navigationBarTitleText": "拼单详情"
+			}
+		},
+		{
+			"path": "pages/index/shop/goodsList",
+			"style": {
+				"navigationBarTitleText": "店铺详情"
+			}
+		},
+		
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					//#ifdef H5
+					"titleNView": false
+					//#endif
+				}
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/order/takefood",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/order/feedback",
+			"style": {
+				"navigationBarTitleText": "订单评价"
+			}
+		},
+		{
+			"path": "pages/order/complaint/complaint",
+			"style": {
+				"navigationBarTitleText": "投诉"
+			}
+		},
+		{
+			"path": "pages/order/waimaiMap",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/order/paotuiMap",
+			"style": {
+				"navigationBarTitleText": "地图"
+			}
+		},
+		
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#FEFBDA"
+			}
+		},
+
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+
+	],
+	"subPackages": [{
+			"root": "my",
+			"pages": [{
+					"path": "address/index",
+					"style": {
+						"navigationBarTitleText": "地址管理"
+					}
+				},
+				{
+					"path": "address/add",
+					"style": {
+						"navigationBarTitleText": "添加地址"
+					}
+				},
+				
+				
+				{
+					"path": "msg/index",
+					"style": {
+						"navigationBarTitleText": "消息中心"
+					}
+				},
+				{
+					"path": "wallet/index",
+					"style": {
+						"navigationBarTitleText": "我的钱包"
+					}
+				},
+				{
+					"path": "wallet/walletDet",
+					"style": {
+						"navigationBarTitleText": "消费记录"
+					}
+				},
+				{
+					"path": "helpList/index",
+					"style": {
+						"navigationBarTitleText": "帮助中心"
+					}
+				},
+				{
+					"path": "helpList/helpDet",
+					"style": {
+						"navigationBarTitleText": "详情"
+					}
+				},
+				{
+					"path": "recruit/index",
+					"style": {
+						"navigationBarTitleText": "骑手招募"
+					}
+				},
+				{
+					"path": "setting/index",
+					"style": {
+						"navigationBarTitleText": "系统设置"
+					}
+				},
+				{
+					"path": "setting/customer",
+					"style": {
+						"navigationBarTitleText": "联系客服"
+					}
+				},
+				{
+					"path": "setting/mimi",
+					"style": {
+						"navigationBarTitleText": "隐私政策"
+					}
+				},
+				{
+					"path": "setting/xieyi",
+					"style": {
+						"navigationBarTitleText": "用户协议"
+					}
+				},
+				{
+					"path": "setting/about",
+					"style": {
+						"navigationBarTitleText": "关于我们"
+					}
+				},
+				{
+					"path": "setting/feedback",
+					"style": {
+						"navigationBarTitleText": "意见反馈"
+					}
+				},
+				
+				{
+					"path": "coupon/index",
+					"style": {
+						"navigationBarTitleText": "外卖优惠券"
+					}
+				},
+				
+				{
+					"path": "apply/index",
+					"style": {
+						"navigationBarTitleText": "商家入驻"
+					}
+				},
+				{
+					"path": "shoppingCar/index",
+					"style": {
+						"navigationBarTitleText": "购物车"
+					}
+				},
+				
+				{
+					"path": "hongbao/hongbao",
+					"style": {
+						"navigationBarTitleText": "跑腿红包"
+					}
+				},
+				{
+					"path": "tousu/index",
+					"style": {
+						"navigationBarTitleText": "我的投诉"
+					}
+				},
+				{
+					"path": "vip/index",
+					"style": {
+						"navigationBarTitleText": "开通会员"
+					}
+				}
+			]
+		}
+	],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "同城外卖",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FCD202",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index_.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "static/tabbar/order.png",
+				"selectedIconPath": "static/tabbar/order_.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my_.png",
+				"text": "我的"
+			}
+		]
+	}
+}
